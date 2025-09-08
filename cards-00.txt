@@ -1,0 +1,60 @@
+¿Cuáles son las tres nociones primitivas de la teoría de conjuntos?;Conjunto, elemento y la relación de pertenencia.
+¿Cómo se denotan generalmente los conjuntos y los elementos?;Los conjuntos se denotan con letras mayúsculas (ej. A) y los elementos con letras minúsculas (ej. x).
+¿Cómo se denota la pertenencia de un elemento 'x' a un conjunto 'A'?;\(x \in A\)
+¿Cómo se denota que un elemento 'x' NO pertenece a un conjunto 'A'?;\(x \notin A\)
+¿Cuáles son los dos modos de describir conjuntos?;Por comprensión y por extensión.
+En una definición por comprensión, ¿qué dos partes la componen?;Un género próximo (G) y una diferencia específica (\(\psi(x)\)).
+¿Cómo se simboliza una definición por comprensión?;\( \{x | x \in G \land \psi(x)\} \)
+¿Cómo se representa un conjunto por extensión?;Se listan los elementos del conjunto, sin importar el orden, separados por comas y encerrados entre llaves (ej. \{1, 2, 3\}).
+¿Qué es el conjunto vacío y cómo se denota?;Es el conjunto que no posee elementos. Se denota como \(\{\}\) o \(\emptyset\).
+¿Cuándo se habla de una "familia de conjuntos"?;Cuando los elementos de un conjunto son, a su vez, conjuntos.
+¿Cómo se define que un conjunto A es subconjunto de B?;Si cada elemento de A es también un elemento de B.
+¿Cuál es la notación formal para "A es subconjunto de B"?;\(A \subseteq B \triangleq (\forall x)(x \in A \Rightarrow x \in B)\)
+Para cualquier conjunto A, ¿qué dos relaciones de subconjunto son siempre ciertas?;\( \emptyset \subseteq A \) y \( A \subseteq A \).
+¿Cómo se define la igualdad de dos conjuntos A y B?;\(A = B \triangleq A \subseteq B \land B \subseteq A\)
+¿Qué es un subconjunto propio?;Un conjunto A es un subconjunto propio de B si A está incluido en B, pero no son iguales (\(A \subseteq B\) y \(A \neq B\)). Se denota \(A \subset B\).
+¿Qué es el conjunto potencia de A o \(P(A)\)?;Es el conjunto de todos los posibles subconjuntos de A. También se denota como \(2^A\).
+Si la cardinalidad de un conjunto A es \(|A| = n\), ¿cuál es la cardinalidad de su conjunto potencia \(|P(A)|\)?;\(|P(A)| = 2^n\) o \(|P(A)| = 2^{|A|}\).
+¿Cuáles son las operaciones básicas entre conjuntos?;Unión, Intersección, Diferencia, Complemento y Diferencia Simétrica.
+Defina la Unión de dos conjuntos A y B.;\(A \cup B \triangleq \{x | x \in A \lor x \in B\}\)
+Defina la Intersección de dos conjuntos A y B.;\(A \cap B \triangleq \{x | x \in A \land x \in B\}\)
+Defina la Diferencia entre dos conjuntos A y B.;\(A - B \triangleq \{x | x \in A \land x \notin B\}\)
+Defina el Complemento de un conjunto A (respecto a un universo G).;\(\bar{A} = G - A \triangleq \{x | x \in G \land x \notin A\}\)
+Defina la Diferencia Simétrica entre dos conjuntos A y B.;\(A \Delta B \triangleq \{x | (x \in A \land x \notin B) \lor (x \in B \land x \notin A)\}\)
+Enuncie las Propiedades Conmutativas de la unión y la intersección.;1. \(A \cup B = B \cup A\)<br>2. \(A \cap B = B \cap A\)
+Enuncie las Propiedades Asociativas de la unión y la intersección.;1. \(A \cup (B \cup C) = (A \cup B) \cup C\)<br>2. \(A \cap (B \cap C) = (A \cap B) \cap C\)
+Enuncie las Propiedades Distributivas de los conjuntos.;1. \(A \cap (B \cup C) = (A \cap B) \cup (A \cap C)\)<br>2. \(A \cup (B \cap C) = (A \cup B) \cap (A \cup C)\)
+Enuncie las Propiedades de Idempotencia.;1. \(A \cup A = A\)<br>2. \(A \cap A = A\)
+¿Cuáles son las Leyes de De Morgan para conjuntos?;1. \(\overline{A \cup B} = \bar{A} \cap \bar{B}\)<br>2. \(\overline{A \cap B} = \bar{A} \cup \bar{B}\)
+¿Qué es una partición de un conjunto no vacío A?;Es una colección P de subconjuntos de A tal que:<br>1. Cada subconjunto en P es no vacío.<br>2. La unión de todos los subconjuntos en P es igual a A.<br>3. La intersección de dos subconjuntos distintos cualesquiera en P es vacía.
+¿Qué es el Producto Cartesiano de A y B?;\(A \times B = \{(x, y) | x \in A \land y \in B\}\)
+¿Qué es una relación binaria R de A en B?;Es cualquier subconjunto del producto cartesiano \(A \times B\). Se denota \(R \subseteq A \times B\).
+Dada una relación \(R \subseteq A \times B\), ¿qué es el dominio y el codominio?;A es el dominio y B es el codominio o contradominio.
+Dada una relación \(R \subseteq A \times B\), ¿qué es el rango de R, denotado Ran(R)?;Es el conjunto de todos los elementos en B que son segunda componente en los pares ordenados de R.
+¿Cómo se define la relación inversa (o conversa) \(R^{-1}\) de una relación R?;\(R^{-1} \triangleq \{(y,x) | (x,y) \in R\}\)
+¿Cuándo una relación R es total?;Si todos los elementos del conjunto de partida A están relacionados con algún elemento de B.<br>\(Total(R) \triangleq (\forall x \in A)(\exists y \in B)(xRy)\)
+¿Cuándo una relación R es una función?;Si a cada elemento del dominio le corresponde una única imagen en el codominio.<br>\(Función(R) \triangleq (\forall x \in A)(\forall y, y' \in B)(xRy \land xRy' \Rightarrow y = y')\)
+¿Cuándo una relación R es inyectiva?;Si elementos distintos del dominio tienen imágenes distintas.<br>\(Inyectiva(R) \triangleq (\forall x, x' \in A)(\forall y \in B)(xRy \land x'Ry \Rightarrow x = x')\)
+¿Cuándo una relación R es sobreyectiva (suryectiva)?;Si cada elemento del codominio es imagen de al menos un elemento del dominio.<br>\(Sobreyectiva(R) \triangleq (\forall y \in B)(\exists x \in A)(xRy)\)
+Defina la composición de relaciones \(R \subseteq A \times B\) y \(S \subseteq B \times C\).;\(R \circ S \triangleq \{(x,z) | (\exists y \in B)((x,y) \in R \land (y,z) \in S)\}\)
+La composición de relaciones, ¿cumple la propiedad asociativa?;Sí, \(R \circ (S \circ T) = (R \circ S) \circ T\).
+¿Qué es una relación binaria sobre un conjunto A?;Es una relación donde el dominio y el codominio son el mismo conjunto A, es decir, \(R \subseteq A \times A\).
+Defina la propiedad Reflexiva de una relación \(R \subseteq A \times A\).;\(Reflexiva(R) \triangleq (\forall x \in A)(xRx)\)
+Defina la propiedad Antirreflexiva de una relación \(R \subseteq A \times A\).;\(Antirreflexiva(R) \triangleq (\forall x \in A)(x\not{R}x)\)
+Defina la propiedad Simétrica de una relación \(R \subseteq A \times A\).;\(Simétrica(R) \triangleq (\forall x, y \in A)(xRy \Rightarrow yRx)\)
+Defina la propiedad Débilmente Antisimétrica de una relación \(R \subseteq A \times A\).;\(Débilmente\_Antisimétrica(R) \triangleq (\forall x, y \in A)(xRy \land yRx \Rightarrow x = y)\)
+Defina la propiedad Transitiva de una relación \(R \subseteq A \times A\).;\(Transitiva(R) \triangleq (\forall x, y, z \in A)(xRy \land yRz \Rightarrow xRz)\)
+Defina la propiedad Circular de una relación \(R \subseteq A \times A\).;\(Circular(R) \triangleq (\forall x, y, z \in A)(xRy \land yRz \Rightarrow zRx)\)
+Defina la propiedad Completa (o Total) de una relación \(R \subseteq A \times A\).;\(Completa(R) \triangleq (\forall x, y \in A)(xRy \lor yRx)\)
+¿Qué es una relación de Preorden?;Es una relación que es Reflexiva y Transitiva.
+¿Qué es una relación de Orden (u Orden Parcial)?;Es una relación que es de Preorden (Reflexiva, Transitiva) y además es Débilmente Antisimétrica.
+¿Qué es una relación de Orden Total?;Es una relación de Orden que además es Completa.
+¿Qué es una relación de Buen Orden?;Es un Orden Total donde todo subconjunto no vacío tiene un primer elemento (un mínimo).
+¿Qué es una relación de Equivalencia?;Es una relación que es Reflexiva, Simétrica y Transitiva.
+¿Cuál es una definición alternativa de una relación de Equivalencia?;Es una relación que es Reflexiva y Circular.
+¿Qué tipo de relación es la "divisibilidad" entre números naturales?;Es una relación de Orden (Parcial). Es reflexiva, débilmente antisimétrica y transitiva.
+¿Qué tipo de relación es la inclusión " \(\subseteq\) " en una familia de conjuntos?;Es una relación de Orden (Parcial).
+¿Qué tipo de relación es la igualdad " \(=\) " entre conjuntos?;Es una relación de Equivalencia.
+Si R es una relación de equivalencia en A, ¿qué es una clase de equivalencia de x, denotada \(R[x]\)?;Es el conjunto de todos los elementos de A que están relacionados con x por R.
+Si R es una relación de equivalencia en A, ¿qué es el conjunto cociente \(A/R\)?;Es el conjunto de todas las clases de equivalencia. Forma una partición del conjunto A.
+Dada una partición P de un conjunto A, ¿cómo se puede definir una relación de equivalencia \(R_P\) inducida?;Dos elementos x e y están relacionados si y solo si pertenecen al mismo bloque de la partición.<br>\(R_p \triangleq \{(x,y) | (\exists i)(x,y \in A_i)\}\)```
